@@ -1,0 +1,29 @@
+import 'package:bloc/bloc.dart';
+import 'package:equatable/equatable.dart';
+import 'package:flutter/material.dart';
+import 'package:sports_score_clean_architecture/src/pages/matchs_page/presentation/screens/matchs_page.dart';
+
+part 'home_state.dart';
+
+class HomeCubit extends Cubit<HomeState> {
+  HomeCubit() : super(HomeInitial());
+  int currentIndex = 0;
+  List<BottomNavigationBarItem> bottomNavigationBarItem = [
+    const BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+    const BottomNavigationBarItem(
+        icon: Icon(Icons.density_small_sharp), label: "Competition"),
+    const BottomNavigationBarItem(icon: Icon(Icons.newspaper), label: "News"),
+    const BottomNavigationBarItem(
+        icon: Icon(Icons.person_2_outlined), label: "Account"),
+  ];
+  List<Widget> homePages = [
+    MatchsPage(),
+    Text("Competition"),
+    Text("News"),
+    Text("Account"),
+  ];
+  changeHomePage(int index) {
+    currentIndex = index;
+    emit(HomeInitial());
+  }
+}
