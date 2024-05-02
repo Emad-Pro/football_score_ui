@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:equatable/equatable.dart';
+
 import 'package:flutter/material.dart';
 import 'package:sports_score_clean_architecture/src/pages/matchs_page/presentation/screens/matchs_page.dart';
 
@@ -17,10 +17,10 @@ class HomeCubit extends Cubit<HomeState> {
         icon: Icon(Icons.person_2_outlined), label: "Account"),
   ];
   List<Widget> homePages = [
-    MatchsPage(),
-    Text("Competition"),
-    Text("News"),
-    Text("Account"),
+    const MatchsPage(),
+    const Text("Competition"),
+    const Text("News"),
+    const Text("Account"),
   ];
   changeHomePage(int index) {
     currentIndex = index;

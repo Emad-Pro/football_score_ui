@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../data/model/subtitues_model.dart';
 import '../screen/pages_tabar/match_detail_line_up/match_detail_line_up.dart';
+import '../screen/pages_tabar/match_detail_stats/match_detail_stats.dart';
 import '../screen/pages_tabar/match_detail_summary/match_detail_summary_page.dart';
 
 part 'match_detail_state.dart';
@@ -23,7 +24,7 @@ class MatchDetailCubit extends Cubit<MatchDetailState> {
   List<Widget> tabbarPages = [
     const MatchDetailSummaryPage(),
     const MatchDetailLineUp(),
-    const Text("Stats"),
+    const MatchDetailStats(),
     const Text("H2h"),
     const Text("Standings"),
     const Text("Report")

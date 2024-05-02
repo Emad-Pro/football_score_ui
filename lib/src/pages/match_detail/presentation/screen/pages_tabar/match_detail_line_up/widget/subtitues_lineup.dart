@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../controller/match_detail_cubit.dart';
-import '../match_detail_line_up.dart';
+
 import 'build_subtitues_widget.dart';
 
 class SubTituesLineUp extends StatelessWidget {

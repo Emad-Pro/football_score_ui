@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sports_score_clean_architecture/src/pages/match_detail/data/model/subtitues_model.dart';
 
 import 'widget/subtitues_lineup.dart';
 import 'widget/text_squad_lineup.dart';
