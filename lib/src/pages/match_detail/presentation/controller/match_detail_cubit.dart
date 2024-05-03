@@ -1,8 +1,10 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
+import 'package:sports_score_clean_architecture/src/pages/match_detail/data/model/last_five_match_model.dart';
 
 import '../../data/model/subtitues_model.dart';
+import '../screen/pages_tabar/match_detail_h2h/match_detail_h2h.dart';
 import '../screen/pages_tabar/match_detail_line_up/match_detail_line_up.dart';
 import '../screen/pages_tabar/match_detail_stats/match_detail_stats.dart';
 import '../screen/pages_tabar/match_detail_summary/match_detail_summary_page.dart';
@@ -25,7 +27,7 @@ class MatchDetailCubit extends Cubit<MatchDetailState> {
     const MatchDetailSummaryPage(),
     const MatchDetailLineUp(),
     const MatchDetailStats(),
-    const Text("H2h"),
+    const MatchDetailH2h(),
     const Text("Standings"),
     const Text("Report")
   ];
@@ -34,6 +36,49 @@ class MatchDetailCubit extends Cubit<MatchDetailState> {
     tabs.insert(newIndex, temp);
     emit(MatchDetailInitial());
   }
+
+  List<LastFiveMatchModel> lastFiveMatch = [
+    LastFiveMatchModel(
+        yearMatch: '2022',
+        teamOneLogo: 'assets/images/team2.png',
+        teamTowlogo: 'assets/images/team1.png',
+        teamOneName: 'Manchester United',
+        teamTowName: 'Nottingham Forest',
+        scoreTeamOne: '3',
+        scoreTeameTow: '0'),
+    LastFiveMatchModel(
+        yearMatch: '1999',
+        teamOneLogo: 'assets/images/team1.png',
+        teamTowlogo: 'assets/images/team2.png',
+        teamTowName: 'Manchester United',
+        teamOneName: 'Nottingham Forest',
+        scoreTeamOne: '1',
+        scoreTeameTow: '8'),
+    LastFiveMatchModel(
+        yearMatch: '1998',
+        teamOneLogo: 'assets/images/team2.png',
+        teamTowlogo: 'assets/images/team1.png',
+        teamOneName: 'Manchester United',
+        teamTowName: 'Nottingham Forest',
+        scoreTeamOne: '3',
+        scoreTeameTow: '0'),
+    LastFiveMatchModel(
+        yearMatch: '1996',
+        teamOneLogo: 'assets/images/team1.png',
+        teamTowlogo: 'assets/images/team2.png',
+        teamTowName: 'Manchester United',
+        teamOneName: 'Nottingham Forest',
+        scoreTeamOne: '0',
+        scoreTeameTow: '4'),
+    LastFiveMatchModel(
+        yearMatch: '1998',
+        teamOneLogo: 'assets/images/team2.png',
+        teamTowlogo: 'assets/images/team1.png',
+        teamOneName: 'Manchester United',
+        teamTowName: 'Nottingham Forest',
+        scoreTeamOne: '4',
+        scoreTeameTow: '1'),
+  ];
 
   List<SubTituesModel> team1ListPlayer = [
     SubTituesModel(namePlayer: "W.Hennesey (GK)", numberPlayer: "13"),
