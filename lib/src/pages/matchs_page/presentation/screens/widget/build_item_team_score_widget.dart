@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sports_score_clean_architecture/core/app_styles.dart';
 import 'package:sports_score_clean_architecture/core/widget/custom_team1_vs_team2.dart';
+import 'package:sports_score_clean_architecture/src/pages/match_detail/presentation/screen/match_detail_screen.dart';
 
 class BuildItemTeamScoreWidget extends StatelessWidget {
   const BuildItemTeamScoreWidget({
@@ -14,7 +15,6 @@ class BuildItemTeamScoreWidget extends StatelessWidget {
       decoration: BoxDecoration(
           color: const Color.fromARGB(255, 42, 41, 41),
           borderRadius: BorderRadius.circular(10)),
-      width: 300,
       padding: const EdgeInsets.all(15),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -54,12 +54,17 @@ class BuildItemTeamScoreWidget extends StatelessWidget {
           ),
           const Spacer(),
           Container(
-              width: double.infinity,
+              width: 250,
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(12)),
               margin: const EdgeInsets.only(top: 15),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MatchDetailScreen()));
+                },
                 style: ButtonStyle(
                     foregroundColor:
                         MaterialStateProperty.all<Color>(Colors.white),

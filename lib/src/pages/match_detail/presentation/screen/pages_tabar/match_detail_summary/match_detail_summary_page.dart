@@ -8,9 +8,11 @@ class MatchDetailSummaryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [SecondTimeWidget(), TextHalfTimeWidget(), FirstTimeWidget()],
+    return const SingleChildScrollView(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [SecondTimeWidget(), TextHalfTimeWidget(), FirstTimeWidget()],
+      ),
     );
   }
 }

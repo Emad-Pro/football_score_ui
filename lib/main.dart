@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sports_score_clean_architecture/src/home/controller/cubit/home_cubit.dart';
+import 'package:sports_score_clean_architecture/src/home/screens/home_screen.dart';
 import 'package:sports_score_clean_architecture/src/pages/matchs_page/presentation/controllers/cubit/matchs_cubit.dart';
 
 import 'src/pages/match_detail/presentation/screen/match_detail_screen.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const MatchDetailScreen(),
+        home: const HomeScreen(),
       ),
     );
   }

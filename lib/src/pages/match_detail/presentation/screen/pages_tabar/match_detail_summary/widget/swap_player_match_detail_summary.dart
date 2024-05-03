@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../../../domain/model/swap_player_model.dart';
+import '../../../../../domain/entitis/swap_player_model.dart';
 
 class SwapPlayerMatchDetailSummaryPage extends StatelessWidget {
   const SwapPlayerMatchDetailSummaryPage(

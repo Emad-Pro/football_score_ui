@@ -3,7 +3,7 @@ import 'package:sports_score_clean_architecture/src/pages/match_detail/presentat
 import 'package:sports_score_clean_architecture/src/pages/match_detail/presentation/screen/pages_tabar/match_detail_summary/widget/goals_player_match_detail_summary.dart';
 import 'package:sports_score_clean_architecture/src/pages/match_detail/presentation/screen/pages_tabar/match_detail_summary/widget/swap_player_match_detail_summary.dart';
 
-import '../../../../../domain/model/swap_player_model.dart';
+import '../../../../../domain/entitis/swap_player_model.dart';
 
 class SecondTimeWidget extends StatelessWidget {
   const SecondTimeWidget({

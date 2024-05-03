@@ -10,6 +10,7 @@ class MatchDetailScreenBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomScrollView(
+      physics: NeverScrollableScrollPhysics(),
       slivers: [
         MatchDetailAppBar(),
         MatchDetailBoardWidget(),

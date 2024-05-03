@@ -21,7 +21,9 @@ class MatchDetailAppBar extends StatelessWidget {
         )
       ],
       leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
           icon: const Icon(
             Icons.arrow_back_ios_sharp,
             size: 16,

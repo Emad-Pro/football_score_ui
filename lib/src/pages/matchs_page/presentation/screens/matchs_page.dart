@@ -15,9 +15,9 @@ class MatchsPage extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15.0),
       child: ScrollConfiguration(
-        behavior: const ScrollBehavior().copyWith(overscroll: false),
+        behavior: ScrollBehavior().copyWith(overscroll: false),
         child: const CustomScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: NeverScrollableScrollPhysics(),
           slivers: [
             CustomAppbar(),
             DateSelectionWidget(),
