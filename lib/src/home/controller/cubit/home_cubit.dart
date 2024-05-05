@@ -1,6 +1,7 @@
 import 'package:bloc/bloc.dart';
 
 import 'package:flutter/material.dart';
+import 'package:sports_score_clean_architecture/src/pages/competition_page/presentation/screen/competition_screen.dart';
 import 'package:sports_score_clean_architecture/src/pages/matchs_page/presentation/screens/matchs_page.dart';
 
 part 'home_state.dart';
@@ -18,7 +19,7 @@ class HomeCubit extends Cubit<HomeState> {
   ];
   List<Widget> homePages = [
     const MatchsPage(),
-    const Text("Competition"),
+    const CompetitionScreen(),
     const Text("News"),
     const Text("Account"),
   ];

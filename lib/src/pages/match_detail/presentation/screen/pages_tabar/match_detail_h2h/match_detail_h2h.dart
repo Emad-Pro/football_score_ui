@@ -8,8 +8,8 @@ class MatchDetailH2h extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [H2hTotalWinsHeader(), H2hLastFiveMatchListView()],
+    return const CustomScrollView(
+      slivers: [H2hTotalWinsHeader(), H2hLastFiveMatchListView()],
     );
   }
 }

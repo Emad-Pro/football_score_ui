@@ -12,7 +12,7 @@ class ListViewHorizontalLiveNow extends StatelessWidget {
       child: Container(
         width: 200,
         height: 200,
-        margin: const EdgeInsets.only(top: 10),
+        margin: const EdgeInsets.only(top: 10, left: 10, right: 10),
         child: ListView.builder(
             scrollDirection: Axis.horizontal,
             shrinkWrap: true,

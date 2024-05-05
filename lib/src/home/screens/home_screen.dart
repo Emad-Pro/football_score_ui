@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       builder: (context, state) {
         final homeCubit = BlocProvider.of<HomeCubit>(context);
         return Scaffold(
-          body: homeCubit.homePages[homeCubit.currentIndex],
+          body: SafeArea(child: homeCubit.homePages[homeCubit.currentIndex]),
           bottomNavigationBar: BottomNavigationBar(
               currentIndex: homeCubit.currentIndex,
               selectedIconTheme: const IconThemeData(color: Color(0xffF63D68)),

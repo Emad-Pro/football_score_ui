@@ -10,7 +10,7 @@ class LiveNowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Container(
-        margin: const EdgeInsets.only(top: 15),
+        margin: const EdgeInsets.only(top: 15, left: 10, right: 10),
         child: Row(children: [
           Text(
             "Live Now",

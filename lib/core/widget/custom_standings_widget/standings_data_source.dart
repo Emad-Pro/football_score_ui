@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_datagrid/datagrid.dart';
 
-import '../../../../../domain/entitis/standing_model.dart';
+import '../../standing_model.dart';
 
 class StandingsDataSource extends DataGridSource {
   StandingsDataSource({required List<StandingsModel> standingsList}) {
@@ -47,7 +47,7 @@ class StandingsDataSource extends DataGridSource {
                 margin: const EdgeInsets.only(right: 10),
                 color: const Color(0xffFB6514),
               ),
-            if (e.columnName == "#" && e.value >= 7 && e.value <= 8)
+            if (e.columnName == "#" && e.value == 7)
               Container(
                 height: double.infinity,
                 width: 3,

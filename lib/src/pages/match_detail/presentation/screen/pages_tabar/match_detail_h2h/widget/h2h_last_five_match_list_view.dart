@@ -10,7 +10,7 @@ class H2hLastFiveMatchListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return SliverToBoxAdapter(
       child: Column(
         children: [
           Center(
@@ -22,22 +22,19 @@ class H2hLastFiveMatchListView extends StatelessWidget {
               ),
             ),
           ),
-          Expanded(
-            child: ListView.separated(
-              shrinkWrap: true,
-              itemCount: BlocProvider.of<MatchDetailCubit>(context)
-                  .lastFiveMatch
-                  .length,
-              itemBuilder: (context, index) {
-                return H2hLastFiveMAtchesBuildItem(
-                    lastFiveMatchModel:
-                        BlocProvider.of<MatchDetailCubit>(context)
-                            .lastFiveMatch[index]);
-              },
-              separatorBuilder: (context, index) {
-                return const Divider();
-              },
-            ),
+          ListView.separated(
+            physics: const NeverScrollableScrollPhysics(),
+            shrinkWrap: true,
+            itemCount:
+                BlocProvider.of<MatchDetailCubit>(context).lastFiveMatch.length,
+            itemBuilder: (context, index) {
+              return H2hLastFiveMAtchesBuildItem(
+                  lastFiveMatchModel: BlocProvider.of<MatchDetailCubit>(context)
+                      .lastFiveMatch[index]);
+            },
+            separatorBuilder: (context, index) {
+              return const Divider();
+            },
           ),
         ],
       ),

@@ -12,21 +12,15 @@ class MatchsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15.0),
-      child: ScrollConfiguration(
-        behavior: ScrollBehavior().copyWith(overscroll: false),
-        child: const CustomScrollView(
-          physics: NeverScrollableScrollPhysics(),
-          slivers: [
-            CustomAppbar(),
-            DateSelectionWidget(),
-            LiveNowWidget(),
-            ListViewHorizontalLiveNow(),
-            TabbarHomeScreen()
-          ],
-        ),
-      ),
+    return const CustomScrollView(
+      physics: NeverScrollableScrollPhysics(),
+      slivers: [
+        CustomAppbar(),
+        DateSelectionWidget(),
+        LiveNowWidget(),
+        ListViewHorizontalLiveNow(),
+        TabbarHomeScreen()
+      ],
     );
   }
 }

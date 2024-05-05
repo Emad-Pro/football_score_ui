@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'standings_color_named.dart';
+import '../../../../../../../../core/widget/custom_standings_widget/standings_color_named.dart';
 
 class StandingsColorId extends StatelessWidget {
   const StandingsColorId({

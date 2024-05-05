@@ -12,7 +12,7 @@ class TabbarHomeScreen extends StatelessWidget {
     final homecubit = BlocProvider.of<MatchsCubit>(context);
     return SliverFillRemaining(
       child: Container(
-        margin: const EdgeInsets.only(top: 10),
+        margin: const EdgeInsets.only(top: 10, left: 10, right: 10),
         child: DefaultTabController(
           length: homecubit.tabs.length,
           child: Column(

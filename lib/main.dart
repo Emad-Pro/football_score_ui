@@ -4,7 +4,7 @@ import 'package:sports_score_clean_architecture/src/home/controller/cubit/home_c
 import 'package:sports_score_clean_architecture/src/home/screens/home_screen.dart';
 import 'package:sports_score_clean_architecture/src/pages/matchs_page/presentation/controllers/cubit/matchs_cubit.dart';
 
-import 'src/pages/match_detail/presentation/screen/match_detail_screen.dart';
+import 'src/pages/competition_page/presentation/controller/cubit/competition_cubit.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => MatchsCubit()),
-        BlocProvider(create: (context) => HomeCubit())
+        BlocProvider(create: (context) => HomeCubit()),
+        BlocProvider(create: (context) => CompetitionCubit())
       ],
       child: MaterialApp(
         title: 'Score App',
