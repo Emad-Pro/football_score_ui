@@ -29,4 +29,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/competition_logo/
+    - assets/images/competition_goalKeper/
+    - assets/images/player_goolals/
+    - assets/images/player_assist/
 
