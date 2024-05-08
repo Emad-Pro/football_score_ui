@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../../core/app_styles.dart';
+import '../app_styles.dart';
 
-class BuildTagItem extends StatelessWidget {
-  const BuildTagItem({super.key, required this.text});
+class CustomTagItem extends StatelessWidget {
+  const CustomTagItem({super.key, required this.text});
   final String text;
   @override
   Widget build(BuildContext context) {
