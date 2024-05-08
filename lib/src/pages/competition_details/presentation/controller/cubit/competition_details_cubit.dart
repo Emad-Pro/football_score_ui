@@ -1,5 +1,4 @@
 import 'package:bloc/bloc.dart';
-import 'package:equatable/equatable.dart';
 import 'package:flutter/widgets.dart';
 import 'package:sports_score_clean_architecture/src/pages/competition_details/domain/entitis/competition_player_model.dart';
 import 'package:sports_score_clean_architecture/src/pages/competition_details/presentation/screens/pages/competition_fixtures/competition_fixtures.dart';
@@ -99,7 +98,7 @@ class CompetitionDetailsCubit extends Cubit<CompetitionDetailsState> {
     CompetitionPlayerModel(
         id: 2,
         playerName: 'Nick Pope',
-        playerClub: 'NewCastle United',
+        playerClub: 'New Castle United',
         playerImage: 'assets/images/competition_goalKeper/pope.png',
         playerScore: 13),
     CompetitionPlayerModel(

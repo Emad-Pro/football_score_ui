@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sports_score_clean_architecture/src/home/controller/cubit/home_cubit.dart';
 import 'package:sports_score_clean_architecture/src/home/screens/home_screen.dart';
 import 'package:sports_score_clean_architecture/src/pages/matchs_page/presentation/controllers/cubit/matchs_cubit.dart';
+import 'package:sports_score_clean_architecture/src/pages/news_page/presentation/controller/cubit/news_cubit.dart';
 
 import 'src/pages/competition_page/presentation/controller/cubit/competition_cubit.dart';
 
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => MatchsCubit()),
         BlocProvider(create: (context) => HomeCubit()),
-        BlocProvider(create: (context) => CompetitionCubit())
+        BlocProvider(create: (context) => CompetitionCubit()),
+        BlocProvider(create: (context) => NewsCubit())
       ],
       child: MaterialApp(
         title: 'Score App',
