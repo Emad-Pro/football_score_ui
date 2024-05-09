@@ -11,6 +11,7 @@ dependencies:
   dio: ^5.4.3+1
   easy_date_timeline: ^1.0.6
   equatable: ^2.0.5
+  expansion_tile_group: ^1.2.4
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.5

@@ -14,6 +14,7 @@ class TabbarHomeScreen extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.only(top: 10, left: 10, right: 10),
         child: DefaultTabController(
+          initialIndex: 1,
           length: homecubit.tabs.length,
           child: Column(
             children: [

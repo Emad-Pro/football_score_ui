@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:sports_score_clean_architecture/src/pages/competition_page/presentation/screen/competition_screen.dart';
 import 'package:sports_score_clean_architecture/src/pages/matchs_page/presentation/screens/matchs_page.dart';
 
+import '../../../pages/account_page/presentation/screens/account_page.dart';
 import '../../../pages/news_page/presentation/screen/news_screen.dart';
 
 part 'home_state.dart';
@@ -23,7 +24,7 @@ class HomeCubit extends Cubit<HomeState> {
     const MatchsPage(),
     const CompetitionScreen(),
     const NewsScreen(),
-    const Text("Account"),
+    const AccountPage(),
   ];
   changeHomePage(int index) {
     currentIndex = index;
